@@ -1,0 +1,15 @@
+{
+  "name": "infinite-slider",
+  "description": "Deploy a parcel app to GitHub pages",
+  "homepage": "https://isengupt.github.io/infinite-slider",
+  "scripts": {
+    "start": "parcel index.html",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url /infinite-slider",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "gsap": "^3.5.1",
+    "math-fit": "^1.0.1",
+    "pixi.js": "^5.3.4"
+  }
+}
